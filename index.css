@@ -1,60 +1,79 @@
-<!doctype html>
-<html>
-	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="index.css">
-	</head>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+}
 
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li class="logo">
-						WeBarelyWork
-					</li>
-					<li>
-						<img src="images/pin.png" class="icon" alt="location">
-					</li>
-					<li class="align-right">
-						<img src="images/burger.png" class="icon">
-					</li>
-				</ul>
-			</nav>
-		</header> 
-		<main>
-			<section>
-				<h1>The best coworking spaces for lazy devs.</h1>
-			</section>
-			
-			<section class="item">
-				<img src="images/hygge.jpg" class="item-img" alt="A smart coworking space">
-				<div class="img-banner">
-					Exclusive
-				</div>
-				<div class="caption">
-					<p>Skiving in Scandinavia? Relax with a latte at Hygge Lounge.</p>
-					<button>Book</button>
-				</div>
-			</section> 
-			
-			<section class="item">
-				<img src="images/sky-garden.jpg" class="item-img" alt="A coworking space with plants">
-				<div class="caption">
-					<p>Bored in Barcelona? Take a siesta at the Sky Garden.</p>
-					<button>Book</button>
-				</div>
-			</section> 
-			
-			<section class="item">
-				<img src="images/generator.jpg" class="item-img" alt="A comfortable coworking space">
-				<div class="caption">
-					<p>Relaxing in Rio? Take some downtime at the Generator Hub.</p>
-					<button>Book</button>
-				</div>
-			</section>
-			
-		</main>
-	</body>
-</html>
+header {
+    background-color: #282828;
+    color: whitesmoke;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    gap: 10px
+}
+
+li {
+    cursor: pointer;
+}
+
+.icon {
+    width: 25px;
+}
+
+.align-right {
+    margin-left: auto;
+} 
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px 25px;
+}
+
+.item {
+    position: relative;
+}
+
+.item-img {
+    display: block;
+    width: 100%;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 25px;
+}
+
+.img-banner { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+button {
+    align-self: center;
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
